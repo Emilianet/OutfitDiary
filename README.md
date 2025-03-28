@@ -7,3 +7,5 @@
 * Sovelluksessa on käyttäjäsivut, jotka näyttävät jokaisesta käyttäjästä tilastoja ja käyttäjän lisäämät asukokonaisuudet.
 * Käyttäjä pystyy valitsemaan asulle yhden tai useamman luokittelun (esim. mihin asun voisi pukea). Mahdolliset luokat ovat tietokannassa.
 * Käyttäjä pystyy kommentoimaan ja tykkäämään muiden käyttäjien lisäämiä asukokonaisuuksia.
+
+Tällä hetkellä käyttäjä pystyy luomaan tunnuksen, kirjautumaan sisään ja ulos. Hän pystyy lisäämään, muokkaamaan ja poistamaan tietokohteita (ei kuvia). Lisäksi hän pystyy hakemaan tietokohteita hakusanalla.
