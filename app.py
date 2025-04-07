@@ -47,7 +47,8 @@ def show_item(item_id):
 @app.route("/new_item")
 def new_item():
     require_login()
-    return render_template("new_item.html")
+    classes = items.get_all_classes()
+    return render_template("new_item.html", classes=classes)
 
 @app.route("/create_item", methods=["POST"])
 def create_item():
@@ -62,12 +63,10 @@ def create_item():
     user_id = session["user_id"]
 
     classes = []
-    section = request.form["section"]
-    if section:
-        classes.append(("Osasto", section))
-    season = request.form["season"]
-    if season:
-        classes.append(("Kausi", season))
+    for entry in request.form.getlist("classes"):
+        if entry:
+            parts = entry.split(":")
+            classes.append((parts[0], parts[1]))
 
     items.add_item(title, description, user_id, classes)
 
