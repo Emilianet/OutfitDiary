@@ -8,4 +8,5 @@
 * Käyttäjä pystyy valitsemaan asulle yhden tai useamman luokittelun (esim. mihin asun voisi pukea). Mahdolliset luokat ovat tietokannassa.
 * Käyttäjä pystyy kommentoimaan ja tykkäämään muiden käyttäjien lisäämiä asukokonaisuuksia.
 
-Tällä hetkellä käyttäjä pystyy luomaan tunnuksen, kirjautumaan sisään ja ulos. Hän pystyy lisäämään, muokkaamaan ja poistamaan tietokohteita (ei kuvia). Lisäksi hän pystyy hakemaan tietokohteita hakusanalla.
+Tällä hetkellä käyttäjä pystyy luomaan tunnuksen, kirjautumaan sisään ja ulos. Hän pystyy lisäämään, muokkaamaan ja poistamaan tietokohteita, myös kuvia. Lisäksi hän pystyy hakemaan tietokohteita hakusanalla.
+Sovelluksessa on käyttäjäsivut ja käyttäjä pystyy valitsemaan asulleen luokittelun. Käyttäjä pystyy myös kommentoimaan muiden käyttäjien lisäämiä asuja.
