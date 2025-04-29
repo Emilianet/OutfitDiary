@@ -19,25 +19,21 @@
 <p>
   {{ item.description }}
 </p>
-<p>
-  Ilmoittaja: <a href="/user/{{ item.user_id }}">{{ item.username }}</a>
-</p>
+<ul>
+  <li>Ilmoittaja: <a href="/user/{{ item.user_id }}">{{ item.username }}</a></li>
 {% if classes %}
-<p>
-  Luokat:
-  <ul>
-    {% for class in classes %}
-    <li>{{ class.title }}: {{ class.value }}</li>
-    {% endfor %}
-  </ul>
-</p>
+  {% for class in classes %}
+  <li>{{ class.title }}: {{ class.value }}</li>
+  {% endfor %}
 {% endif %}
+</ul>
 <h3>Kommentit</h3>
 <ul>
   {% for com in comments %}
   <li>{{ com.comment }}, <a href="/user/{{ com.user_id }}">{{ com.username }}</a></li>
   {% endfor %}
 </ul>
+{% if session.user_id %}
 <h3>Uusi kommentti</h3>
 <form action="/create_comment" method="post">
   Kommentti:
@@ -45,4 +41,5 @@
   <input type="hidden" name="item_id" value="{{ item.id }}">
   <input type="submit" value="Kommentoi" />
 </form>
+{% endif %}
 {% endblock %}
