@@ -10,3 +10,10 @@ body {
     margin: 1em;
     padding: 0.2em 0.5em;
 }
+
+
+.responsive-img img {
+    max-width: 50%;
+    height: auto;
+    }
+    

@@ -12,7 +12,9 @@
 </p>
 {% endif %}
 {% for image in images %}
-<img src="/image/{{ image.id }}" />
+  <div class="responsive-img">
+    <img src="/image/{{ image.id }}" />
+  </div>
 {% endfor %}
 <p>
   {{ item.description }}
