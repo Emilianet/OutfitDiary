@@ -15,4 +15,12 @@ body {
 .responsive-img img {
     max-width: 50%;
     height: auto;
-    }
+}
+
+.info {
+    border: 2px solid black;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: blue;
+    color: white;
+}
