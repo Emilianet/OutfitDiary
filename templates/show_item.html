@@ -17,7 +17,7 @@
   </div>
 {% endfor %}
 <p>
-  {{ item.description }}
+  {{ item.description | show_lines }}
 </p>
 <ul>
   <li>Ilmoittaja: <a href="/user/{{ item.user_id }}">{{ item.username }}</a></li>
