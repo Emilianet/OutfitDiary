@@ -14,7 +14,7 @@
   {% for image in images %}
   <input type="checkbox" name="image_id" value="{{ image.id }}">
   <div class="responsive-img">
-    <img src="/image/{{ image.id }}" />
+    <img src="/image/{{ image.id }}" alt="Ilmoituksen kuva" />
   </div>
   <br />
   {% endfor %}
