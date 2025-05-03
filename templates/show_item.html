@@ -30,7 +30,7 @@
 <h3>Kommentit</h3>
 <ul>
   {% for com in comments %}
-  <li>{{ com.comment }}, <a href="/user/{{ com.user_id }}">{{ com.username }}</a></li>
+  <li>{{ com.comment }}, <a href="/user/{{ com.id }}">{{ com.username }}</a></li>
   {% endfor %}
 </ul>
 {% if session.user_id %}
